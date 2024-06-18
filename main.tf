@@ -1,14 +1,16 @@
 
+
 terraform {
   backend "remote" {
-    hostname = "cmrit939.scalr.io"
-    organization = "env-v0od9bfiuheanstpu"
+    hostname = "protran.scalr.io"
+    organization = "env-v0odelrmuhoqui60a"
 
     workspaces {
-      name = "s3cmrittest"
+      name = "test123"
     }
   }
 }
+
 provider "aws"{
 region="ap-south-1"
 }
