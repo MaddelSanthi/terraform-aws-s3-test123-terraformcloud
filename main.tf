@@ -13,9 +13,9 @@ terraform {
 
 provider "aws"{
 region="us-east-1"
-assume_role {
-    role_arn = "arn:aws:iam::853242284930:role/ScalrIntegrationRole"
-  }
+#assume_role {
+ #   role_arn = "arn:aws:iam::853242284930:role/ScalrIntegrationRole"
+  #}
 }
 resource "aws_s3_bucket" "my_bucket" {
  bucket = "my-tf-test-bucket-${var.unique_id}"
